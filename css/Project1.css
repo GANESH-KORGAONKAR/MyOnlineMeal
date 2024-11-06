@@ -1,0 +1,280 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables */
+:root {
+    --nevbar-height: 50px;
+}
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo img {
+    height: 75px;
+    margin: 3px 6px;
+}
+
+/* Navigation Bar: List Styling */
+#navbar ul {
+    display: flex;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    top: 0px;
+    left: 0px;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 5px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* Home Selection */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 6px 200px;
+    height: 620px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#home::before {
+    content: "";
+    background: url(../img/BG/food\ bg2.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 70%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    top: 0px;
+    left: 0px;
+  
+}
+
+#home h1 {
+    font-size: 4.5rem;
+    color: black;
+    text-align: center;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+
+#home p {
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+
+/* Servives Section */
+#services {
+    margin: 10px;
+    display: flex;
+}
+
+#services .box {
+    border: 3px solid black;
+    border-radius: 23px;
+    margin: 10px;
+    padding: 20px;
+    background-color: rgba(240, 229, 229, 0.753);
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+#services .box img {
+    height: 235px;
+    margin: auto;
+    display: block;
+    align-items: center;
+    border-radius: 23px;
+}
+
+#services .box p {
+    font-family: 'Edu NSW ACT Foundation', cursive
+}
+
+#menu {
+    height: 450px;
+    margin: auto;
+    display: block;
+    align-items: center;
+    border-radius: 23px;
+}
+
+.menu-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#menu .menu-item{
+    border: 3px solid black;
+    border-radius: 13px;
+    margin: 10px;
+    padding: 20px;
+    background-color: rgba(240, 229, 229, 0.753);
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+#menu .menu-item img{
+    height: 235px;
+    margin: auto;
+    display: block;
+    align-items: center;
+    border-radius: 23px;
+}
+
+/* Clients Section */
+#connect-us {
+    height: 275px;
+}
+
+#connect-us::before {
+    content: "";
+    background: url(../img/BG/chicken.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 25%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.75;
+}
+
+
+#Social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Social-media-item {
+    padding: 10px;
+}
+
+#Social-media img {
+    height: 100px;
+    opacity: 0.75;
+    border: 3px solid black;
+    border-radius: 20px;
+}
+
+/* Contact section */
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    background: url(../img/BG/contact-us.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.75;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 7px;
+    font-size: 1rem;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+
+footer {
+    background: black;
+    color: white;
+    padding: 10px 20px;
+}
+
+/* Utility Classes */
+.h-primary {
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-size: 3rem;
+    padding: 12px;
+}
+
+.h-secondary {
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-size: 2rem;
+    padding: 12px;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    margin: 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgba(128, 128, 128, 0.76);
+    color: white;
+}
+
+.center {
+    text-align: center;
+}
+
+#about{
+    position: relative;
+    height: 100%;
+}
+
+.about-text{
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+}
